@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+config.yml
+/commitai
+/dist/
+*.log
+output.txt
+all.sh
