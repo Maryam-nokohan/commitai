@@ -4,6 +4,10 @@
 
 `commitai` analyzes your staged Git changes and generates meaningful commit messages. Review suggestions, edit them, regenerate when needed, and commit without leaving your terminal.
 
+
+https://github.com/user-attachments/assets/e73d5f1e-6385-4f65-8360-a745a03a002d
+
+
 - **Multiple AI providers:** OpenAI, Groq, Gemini, DeepSeek, OpenRouter, Together, and Anthropic.
 - **Local-first:** Generate commit messages offline without an API key.
 - **Interactive TUI:** Select, edit, regenerate, and commit messages in one workflow.
