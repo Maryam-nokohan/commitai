@@ -1,3 +1,4 @@
+
 package knowledge
 
 import (
@@ -7,6 +8,7 @@ import (
 	"strings"
 )
 
+//go:embed rules.txt examples.txt bad_examples.txt
 var defaults embed.FS
 
 type Knowledge struct {
@@ -28,14 +30,17 @@ func pick(name string, dirs []string) string {
 		if d == "" {
 			continue
 		}
+
 		if s := readFile(filepath.Join(d, name)); s != "" {
 			return s
 		}
 	}
+
 	data, err := defaults.ReadFile(name)
 	if err != nil {
 		return ""
 	}
+
 	return strings.TrimSpace(string(data))
 }
 
@@ -44,5 +49,6 @@ func readFile(path string) string {
 	if err != nil {
 		return ""
 	}
+
 	return strings.TrimSpace(string(data))
 }
