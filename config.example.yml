@@ -1,0 +1,7 @@
+
+style: "conventional"   # plain | colon | bracket | conventional | "{type}({scope}): {message}"
+backend: "local"
+# model: "gpt-4o-mini"
+# api_base: "https://api.openai.com/v1"
+# suggestions: 3
+# ollama_url: "http://localhost:11434"
