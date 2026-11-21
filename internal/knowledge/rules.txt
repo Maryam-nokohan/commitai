@@ -1,0 +1,7 @@
+- Keep the message under 72 characters.
+- Use imperative mood (e.g. "add", "fix", "update", not "added" or "fixes").
+- The type must be one of: feat, fix, docs, style, refactor, perf, test, build, ci, chore.
+- Put the type and scope ONLY in their own JSON fields. Never repeat "feat:" or "fix(scope):" inside the message.
+- Do not capitalize the first letter of the message.
+- Do not put a period at the end of the message.
+- Describe what changed and why it matters, not which files were touched.

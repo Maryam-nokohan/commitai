@@ -1,0 +1,4 @@
+Fixed the bug in login controller.
+Added new feature for user dashboard
+Update Readme file.
+feat: Added JWT Auth middleware to handle requests

@@ -1,0 +1,4 @@
+feat(auth): add jwt authentication middleware
+fix(api): correct payload validation for user registration
+docs(readme): add installation and configuration guide
+refactor(db): simplify postgres connection pooling logic
