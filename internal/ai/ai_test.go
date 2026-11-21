@@ -31,9 +31,9 @@ func TestBuildPrompt(t *testing.T) {
 
 func TestOpenAIEndpoint(t *testing.T) {
 	cases := map[string]string{
-		"":                                       "https://api.openai.com/v1/chat/completions",
-		"https://x.io/v1/":                       "https://x.io/v1/chat/completions",
-		"https://x.io/v1/chat/completions":       "https://x.io/v1/chat/completions",
+		"":                                 "https://api.openai.com/v1/chat/completions",
+		"https://x.io/v1/":                 "https://x.io/v1/chat/completions",
+		"https://x.io/v1/chat/completions": "https://x.io/v1/chat/completions",
 	}
 	for in, want := range cases {
 		if got := openAIEndpoint(in); got != want {

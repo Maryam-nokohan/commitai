@@ -33,7 +33,7 @@ func generateLocal(_ context.Context, req Request) (Response, error) {
 	return Response{Suggestions: suggestions}, nil
 }
 
-//  diff parsing 
+//  diff parsing
 
 type fileStatus string
 
@@ -212,7 +212,7 @@ func extractIdentifiers(f *diffFile) []string {
 	return names
 }
 
-//  classification 
+//  classification
 
 var bugRe = regexp.MustCompile(`(?i)\b(fix(?:es|ed)?|bug|hotfix|panic|crash(?:es)?|nil pointer)\b`)
 
@@ -279,7 +279,7 @@ func alternateType(primary string) string {
 	}
 }
 
-//  scope + message building 
+//  scope + message building
 
 func commonScope(files []*diffFile) string {
 	var dirs [][]string
